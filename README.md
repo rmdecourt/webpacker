@@ -1,0 +1,2 @@
+# webpacker
+Webpack Boilerplate Config
