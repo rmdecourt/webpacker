@@ -1,2 +1,12 @@
 import '../../css/app.styl';
-console.log('Hello App!');
+import { Button } from '../components/Button';
+
+class App {
+    constructor() {
+        let button = new Button(document.querySelector('.btn'), () => {
+            alert('clicked');
+        });
+    }
+}
+
+new App();

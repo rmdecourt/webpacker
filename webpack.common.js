@@ -92,7 +92,7 @@ exports.config = {
                         loader: 'url-loader',
                         options: {
                             limit: 8192,
-                            name: '[name].[hashchunk:6].[ext]',
+                            name: '[name].[hash:6].[ext]',
                             outputPath: 'img/',
                             publicPath: 'img/'
                         },
@@ -111,7 +111,8 @@ exports.config = {
                             /* Optimizations for JPEGS */
                             mozjpeg: {
                                 progressive: true,
-                                arithmetic: false
+                                arithmetic: false,
+                                quality: 100
                             },
 
                             /* Optimizations for PNGS */
